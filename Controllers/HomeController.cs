@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using aspNetAuth.Models;
+using System.Text;
+using aspNetAuth.Services;
 
 namespace aspNetAuth.Controllers
 {
@@ -26,7 +28,9 @@ namespace aspNetAuth.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(User user) {
             if (ModelState.IsValid) {
-
+                // Manual Auth is custom class to hold hash methods
+                user.Password = ManualAuth.Sha256(user.Password);
+                // Add user and save changes to database.
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Welcome));

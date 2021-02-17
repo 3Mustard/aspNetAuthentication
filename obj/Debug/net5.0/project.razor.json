@@ -15638,8 +15638,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Matt\\Desktop\\files\\coding\\aspNetAuth\\Views\\Home\\LoginFail.cshtml",
+      "TargetPath": "Views\\Home\\LoginFail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Matt\\Desktop\\files\\coding\\aspNetAuth\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Matt\\Desktop\\files\\coding\\aspNetAuth\\Views\\Home\\Welcome.cshtml",
+      "TargetPath": "Views\\Home\\Welcome.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Matt\\Desktop\\files\\coding\\aspNetAuth\\Views\\Home\\Treats.cshtml",
+      "TargetPath": "Views\\Home\\Treats.cshtml",
       "FileKind": "mvc"
     }
   ],

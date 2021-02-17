@@ -13,5 +13,14 @@ namespace aspNetAuth.Services {
             }
             return hash.ToString();
         }
+
+        public static bool Sha256Check(string userInput, string valueToCompare) {
+            // passes the raw user input through the hashing method.
+            string hashedInput = ManualAuth.Sha256(userInput);
+            if (valueToCompare == hashedInput) {
+                return true;
+            }
+            return false;
+        }
     }
 }

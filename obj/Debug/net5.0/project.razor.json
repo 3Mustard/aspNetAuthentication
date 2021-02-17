@@ -15618,6 +15618,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Matt\\Desktop\\files\\coding\\aspNetAuth\\Views\\Home\\Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Matt\\Desktop\\files\\coding\\aspNetAuth\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

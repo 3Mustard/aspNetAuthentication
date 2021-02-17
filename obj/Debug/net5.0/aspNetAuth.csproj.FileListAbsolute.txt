@@ -66,3 +66,7 @@ C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\aspNetAuth.dll
 C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\ref\aspNetAuth.dll
 C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\aspNetAuth.pdb
 C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\aspNetAuth.genruntimeconfig.cache
+C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\Razor\Views\Home\LoginFail.cshtml.g.cs
+C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\Razor\Views\Home\Treats.cshtml.g.cs
+C:\Users\Matt\Desktop\files\coding\aspNetAuth\obj\Debug\net5.0\Razor\Views\Home\Welcome.cshtml.g.cs

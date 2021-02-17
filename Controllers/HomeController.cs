@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using aspNetAuth.Models;
 using System.Text;
 using aspNetAuth.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace aspNetAuth.Controllers
 {
@@ -36,6 +37,25 @@ namespace aspNetAuth.Controllers
                 return RedirectToAction(nameof(Welcome));
             }
             return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(User user) {
+
+            if (ModelState.IsValid) {
+                // attempt to get a user with the matching username from DB.
+                User GetUser = await _context.Users.SingleOrDefaultAsync(u => u.UserName == user.UserName);
+                // if no match on username skip password check.
+                if (GetUser != null) {
+                    // compare hashed passwords.
+                    if (ManualAuth.Sha256Check(user.Password, GetUser.Password)) {
+                        // if password match is true return treats.
+                        return View("Treats");
+                    }
+                }
+            }
+            return View("LoginFail");
         }
 
         public IActionResult Welcome() {
